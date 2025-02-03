@@ -23,7 +23,7 @@ class MerkleTree
 
             for ($i = 0; $i < count($nodes); $i += 2) {
                 $left = $nodes[$i];
-                $right = $nodes[$i + 1] ?? new Node($left->hash); // Para nós ímpares, duplicamos
+                $right = $nodes[$i + 1] ?? new Node($left->hash);
 
                 $parentHash = hash('sha256', $left->hash . $right->hash);
                 $tempNodes[] = new Node($parentHash, $left, $right);
