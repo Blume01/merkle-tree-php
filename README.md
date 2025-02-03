@@ -13,3 +13,19 @@ Se quiser usar essa biblioteca em seu projeto, instale via [Composer](https://ge
 
 ```sh
 composer require blume01/merkle-tree
+```
+
+## Exemplo de uso
+
+```php
+use MerkleTree\MerkleTree;
+
+// 🔹 Dados para construir a árvore Merkle
+$dados = ["bloco1", "bloco2", "bloco3", "bloco4"];
+
+// 🔹 Criando a Merkle Tree
+$merkleTree = new MerkleTree($dados);
+
+// 🔹 Obtendo e exibindo a raiz da árvore
+echo $merkleTree->getRootHash();
+```
