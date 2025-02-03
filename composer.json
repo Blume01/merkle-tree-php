@@ -1,5 +1,8 @@
 {
     "name": "blume01/merkle-tree",
+    "description": "Uma biblioteca PHP para Merkle Tree",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "MerkleTree\\": "src/"
@@ -7,10 +10,5 @@
     },
     "require": {
         "php": ">=7.4"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
