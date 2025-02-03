@@ -1,0 +1,14 @@
+{
+    "name": "blume01/merkle-tree",
+    "autoload": {
+        "psr-4": {
+            "MerkleTree\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
